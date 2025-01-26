@@ -5,3 +5,12 @@ body{
 	text-align: center;
 	font-family: Georgia;
 }
+
+p{
+	font-weight: bold;
+}
+
+#score{
+	text-align: center;
+	font-weight: bold;
+}
