@@ -16,6 +16,5 @@ function checkAnswers() {
         }
     }
 
-    // Display the score at the bottom of the screen
     document.getElementById('score').textContent = `You scored ${score} out of ${Object.keys(correctAnswers).length}`;
 }
