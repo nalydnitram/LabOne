@@ -1,5 +1,4 @@
 function checkAnswers() {
-    // Correct answers
     const correctAnswers = {
         q1: '86',
         q2: 'R.O.B.',
@@ -10,14 +9,13 @@ function checkAnswers() {
 
     let score = 0;
 
-    // Loop through each question
     for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
         const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
         if (selectedOption && selectedOption.value === correctAnswer) {
             score++;
-        
+        }
     }
 
-    // Display the score
-    alert(`You scored ${score} out of ${Object.keys(correctAnswers).length}`);
+    // Display the score at the bottom of the screen
+    document.getElementById('score').textContent = `You scored ${score} out of ${Object.keys(correctAnswers).length}`;
 }
